@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int N, Z = 0, digito;
+
+    cout << "Ingrese un numero entero: ";
+    cin >> N;
+
+    for (int i = N; i > 0; i = i / 10) {
+        digito = i % 10;
+        Z = Z * 10 + digito;
+    }
+
+    cout << "El numero invertido es: " << Z;
+
+    return 0;
+}
