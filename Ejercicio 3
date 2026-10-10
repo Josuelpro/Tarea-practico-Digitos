@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int N, digito, pares = 0;
+
+    cout<<"Ingrese un numero entero: "<< ‘\n’<<";
+    cin>>N;
+
+    for (int i = N; i > 0; i = i / 10) {
+        digito= i % 10;
+
+        if (digito % 2 == 0) {
+            pare =pares+1;
+        }
+    }
+
+    cout<<"Cantidad de digitos pares: "<< pares;
+
+    return 0;
