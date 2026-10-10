@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n,digito,comp_digito;
+    int complemento=0,multiplicador=1;
+    cout<<"Ingrese un numero entero: \n";
+    cin>>N;
+
+    for (int i=n; i > 0; i=i/10) {
+        digito = i % 10;
+        comp_digito=9-digito;
+        complemento=complemento+(comp_digito*multiplicador);
+        multiplicador=multiplicador*10;
+    }
+
+    cout<<"El complemento a 9 es: "<<complemento;
+
+    return 0;
+}
