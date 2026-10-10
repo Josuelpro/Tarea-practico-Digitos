@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int N,z=0,dig;
+    cout<<"Ingrese un numero entero: \n";
+    cin>>N;
+
+
+    for (int i = N; i > 0; i = i / 10) {
+        dig = i % 10;
+        z=z * 10 + dig;
+    }
+
+    if (N == z) {
+        cout<<"El numero es capicua \n";
+    } else {
+        cout<<"El numero no es capicua \n";
+    }
+
+    return 0;
+}
