@@ -1,20 +1,22 @@
+
 #include <iostream>
 using namespace std;
-
 int main() {
-    int N, digito, pares = 0;
+    int n,z=0,dig;
+    cout<<"Ingrese un numero entero: \n";
+    cin>>n;
 
-    cout<<"Ingrese un numero entero: "<< ‘\n’<<";
-    cin>>N;
 
-    for (int i = N; i > 0; i = i / 10) {
-        digito= i % 10;
-
-        if (digito % 2 == 0) {
-            pare =pares+1;
-        }
+    for (int i = n; i > 0; i = i / 10) {
+        dig = i % 10;
+        z=z * 10 + dig;
     }
 
-    cout<<"Cantidad de digitos pares: "<< pares;
+    if (n == z) {
+        cout<<"El numero es capicua \n";
+    } else {
+        cout<<"El numero no es capicua \n";
+    }
 
     return 0;
+}
