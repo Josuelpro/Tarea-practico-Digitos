@@ -1,0 +1,23 @@
+int main() {
+    int N, digito;
+    bool incorrecto = false;
+
+    cout << "Ingrese un numero en base 8: ";
+    cin >> N;
+
+    for (int i = N; i > 0; i = i / 10) {
+        digito = i % 10;
+
+        if (digito > 7) {
+            incorrecto = true;
+        }
+    }
+
+    if (incorrecto == true) {
+        cout << "El numero no corresponde a la base 8";
+    } else {
+        cout << "El numero corresponde a la base 8";
+    }
+
+    return 0;
+}
